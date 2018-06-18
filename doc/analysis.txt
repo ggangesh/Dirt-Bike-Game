@@ -1,0 +1,98 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 10.27      0.19     0.19                             operator*(float, b2Vec2 const&)
+ 10.27      0.38     0.19                             b2ContactSolver::SolveVelocityConstraints()
+  8.65      0.54     0.16                             operator-(b2Vec2 const&, b2Vec2 const&)
+  7.57      0.68     0.14                             b2Vec2::b2Vec2(float, float)
+  5.95      0.79     0.11                             b2Dot(b2Vec2 const&, b2Vec2 const&)
+  3.24      0.85     0.06                             b2Cross(float, b2Vec2 const&)
+  3.24      0.91     0.06                             b2Mul(b2Transform const&, b2Vec2 const&)
+  2.97      0.97     0.06                             b2Cross(b2Vec2 const&, b2Vec2 const&)
+  2.16      1.01     0.04                             b2Mul(b2Rot const&, b2Vec2 const&)
+  2.16      1.05     0.04                             float b2Clamp<float>(float, float, float)
+  1.62      1.08     0.03                             b2Min(b2Vec2 const&, b2Vec2 const&)
+  1.62      1.11     0.03                             b2MulT(b2Rot const&, b2Vec2 const&)
+  1.62      1.14     0.03                             b2Cross(b2Vec2 const&, float)
+  1.62      1.17     0.03                             b2ContactSolver::SolvePositionConstraints()
+  1.62      1.20     0.03                             b2ContactSolver::InitializeVelocityConstraints()
+  1.62      1.23     0.03                             b2RevoluteJoint::SolvePositionConstraints(b2SolverData const&)
+  1.62      1.26     0.03                             b2RevoluteJoint::SolveVelocityConstraints(b2SolverData const&)
+  1.62      1.29     0.03                             b2Vec2::operator-=(b2Vec2 const&)
+  1.62      1.32     0.03                             b2Vec2::operator+=(b2Vec2 const&)
+  1.62      1.35     0.03                             b2Sweep::GetTransform(b2Transform*, float) const
+  1.62      1.38     0.03                             operator+(b2Vec2 const&, b2Vec2 const&)
+  1.35      1.40     0.03                             b2Rot::Set(float)
+  1.08      1.42     0.02                             b2Distance(b2DistanceOutput*, b2SimplexCache*, b2DistanceInput const*)
+  1.08      1.44     0.02                             b2Max(b2Vec2 const&, b2Vec2 const&)
+  1.08      1.46     0.02                             b2FindMaxSeparation(int*, b2PolygonShape const*, b2Transform const&, b2PolygonShape const*, b2Transform const&)
+  1.08      1.48     0.02                             b2DynamicTree::Balance(int)
+  1.08      1.50     0.02                             b2ContactManager::AddPair(void*, void*)
+  1.08      1.52     0.02                             b2Vec2::b2Vec2()
+  1.08      1.54     0.02                             b2Contact::GetNext()
+  0.81      1.56     0.02                             b2DynamicTree::GetUserData(int) const
+  0.54      1.57     0.01                             b2TestOverlap(b2AABB const&, b2AABB const&)
+  0.54      1.58     0.01                             b2TimeOfImpact(b2TOIOutput*, b2TOIInput const*)
+  0.54      1.59     0.01                             float b2Min<float>(float, float)
+  0.54      1.60     0.01                             b2MulT(b2Transform const&, b2Transform const&)
+  0.54      1.61     0.01                             b2BroadPhase::MoveProxy(int, b2AABB const&, b2Vec2 const&)
+  0.54      1.62     0.01                             b2EPCollider::ComputeEdgeSeparation()
+  0.54      1.63     0.01                             b2EPCollider::ComputePolygonSeparation()
+  0.54      1.64     0.01                             debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&)
+  0.54      1.65     0.01                             debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&)
+  0.54      1.66     0.01                             debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&)
+  0.54      1.67     0.01                             b2ContactSolver::StoreImpulses()
+  0.54      1.68     0.01                             b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*)
+  0.54      1.69     0.01                             b2SeparationFunction::Initialize(b2SimplexCache const*, b2DistanceProxy const*, b2Sweep const&, b2DistanceProxy const*, b2Sweep const&, float)
+  0.54      1.70     0.01                             b2Vec2::Set(float, float)
+  0.54      1.71     0.01                             b2Vec2::Normalize()
+  0.54      1.72     0.01                             b2Timer::Reset()
+  0.54      1.73     0.01                             b2World::DrawDebugData()
+  0.54      1.74     0.01                             b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&)
+  0.54      1.75     0.01                             b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool)
+  0.54      1.76     0.01                             b2Contact::GetFixtureA()
+  0.54      1.77     0.01                             b2Simplex::Solve3()
+  0.54      1.78     0.01                             b2Simplex::b2Simplex()
+  0.54      1.79     0.01                             b2PolygonShape::ComputeAABB(b2AABB*, b2Transform const&, int) const
+  0.54      1.80     0.01                             b2Body::IsBullet() const
+  0.54      1.81     0.01                             b2Mat33::Solve22(b2Vec2 const&) const
+  0.54      1.82     0.01                             b2Shape::GetType() const
+  0.54      1.83     0.01                             b2Timer::GetMilliseconds() const
+  0.54      1.84     0.01                             b2Fixture::IsSensor() const
+  0.54      1.85     0.01                             void std::__unguarded_linear_insert<b2Pair*, bool (*)(b2Pair const&, b2Pair const&)>(b2Pair*, bool (*)(b2Pair const&, b2Pair const&))
+  0.27      1.85     0.01                             b2DynamicTree::GetFatAABB(int) const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.

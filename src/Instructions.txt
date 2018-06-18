@@ -1,9 +1,4 @@
-# Dirt-Bike-Simulation
-This is a simulation in Box-2D of the Dirt-Bike. It has been made as a part of project in Box-2D of the course System Software Lab during 3rd semester of BTech degree.
 
-How to run the simulation?
-  First of all download the complete project into a folder
-  
 0. Set your directory to be the directory containing the downloaded
 Box2D package, and immediately make a copy of the archive that you
 downloaded. Use the command 'cp -a' and understand what the "-a"
@@ -20,7 +15,7 @@ option does.
    available in the download.  Do not try to understand the code at
    this point, but simply understand what has been provided.
 
-4. You should have found a text file called cs251_README.txt which is inside the folder external/src .  Follow
+4. You should have found a text file called cs251_README.txt.  Follow
    the instructions very carefully (but keep this text file window
    open).
 
@@ -38,7 +33,11 @@ option does.
 8. Check the ./bin directory for the existence of "cs251_base"
    executable.
 
-9. Run the program( by typing "./cs251_base" in terminal inside the bin folder)
+9. Run the program.
+
+Repeat the whole process 2 more times.  Each of the persons in the
+group should do it, and the others should observe what's going on.
+
 
 ---------------------------------------------------------------------
 Extra Info
@@ -61,3 +60,10 @@ For Ubuntu 13.10 onwards, download these two packages:
 And run:
   sudo dpkg -i <packagename>
 (Install libglui2c2 first, and then libglui-dev)
+
+---------------------------------------------------------------------
+
+If you have problems installing Box2D on OS X, try the instructions
+given in the document below.
+
+https://www.cse.iitb.ac.in/~ngreloaded/only%20for%20mac%20users.pdf

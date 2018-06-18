@@ -1,0 +1,92 @@
+\documentclass[12pt]{beamer}
+\usepackage{graphicx}
+\usepackage{sidecap}
+\usepackage{anyfontsize}
+\usepackage{charter}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usetheme{CambridgeUS}
+\usecolortheme{wolverine}
+\title[Dirt Bike] %optional
+{Dirt Bike Game Simulation}
+ 
+\subtitle{by Crodeators}
+ 
+\author[Crodeaters] % (optional, for multiple authors)
+{Tejesh\inst{} \and Shrey\inst{}\and Gangesh\inst{}}
+ 
+\institute[IITB] % (optional)
+{
+  \inst{}%
+  supervised by\\
+  Prof. Sharat Chandran\\
+  Indian Institute of Techonology 
+}
+ 
+ 
+\logo{\includegraphics[height=1.5cm]{logo}}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}{Project Idea}
+\color{black}
+This is a Box2D simulation that has  a dirt bike which passes through various obstacles moving various things while itself moving.
+The bike itself has movable parts which provides the shock-up features so that the bike can move through any rough track.
+Basically, we designed a basic simulation of the using some features  of the popular dirt-bike game. It has a bike which is capable of going through any rough surfaces. It has a good grip and shock-up system which allows it to perform this task. This is the main part of the dirt-bike game and can be further used to make the actual dirt-bike game.
+\end{frame}
+\begin{frame}{Techniques used}
+
+At first we made the ground of our simulation by copying the code of ground of dominos simulation and changed the length of the ground so as to play with the bike for a long time.
+\newline
+Then we added the tilted ground by studying how the parameters are given while making the line and we got many tilted paths in the project.
+\newline
+Then we added many obstacles to the path such as pendulum, see-saw, garbage boxes and the three big boxes.
+\newline
+For the pendulum and see-saw we studied the dominos project and then copied the codes for these two objects.
+\newline
+For the garbage boxes we made them using loops and declared them dynamic and allowed them to fall on the tilted path from above. We made a small barrier in the tilted path to prevent them from sliding down from the slope.
+\newline
+We added the three big boxes one above the other at last to make a tuff game by crossing these boxes.
+\newline
+We then created the curved path by applying mathematical equations using loops
+\newline
+Then we made the bike using many dynamic objects linked to each other by joints.
+We first made the whole body of the bike as a single part but it did not provide flexibility to the bike. So afterwards we made the bike by joining various parts of the bike by using joints. It allowed the bike to turn at the points where it had a joint.
+\newline
+Then we made the big heavy ball which initialized the motion of the bike by striking on its rear part
+\newline
+At last we decided to add a driver to the bike with its head turning front and back with the motion of the bike being motivated by the game of Hill-climb racing. For this we added a thin rectangular joined to the center part of the bike and then we added a small circular body to denote the head of the driver at the other end of the rectangular body.
+\end{frame}
+\begin{frame}{Software Specifications}
+\color{blue}
+\textbf{Purpose}\newline
+\color{black}
+The purpose of this project is to build a basic version of dirt-bike game. Many additions can be done to this project to make the actual dirt-bike game
+\newline
+\newline
+\color{blue}
+\textbf{Scope}\newline
+\color{black}
+For running this project you need to have linux in your PC and you must install the Box2D, the steps for installing of which are given in the .txt files in the src folder. This dirt-bike simulation game is not intended to work in extreme cases. It is just the basic version of the real dirt-bike game.
+\newline
+\newline
+\color{blue}
+\textbf{How the project works?}\newline
+\color{black}
+The simulation is initialized by dropping of the ball from a height at the top left corner. The ball strikes the bike from its backside giving a momentum to the bike. The bike then falls on the see-saw thus making the box present on the left side of the see-saw to bounce off. Then the bike goes through the garbage boxes after passing through the pendulum in the path. Finally the bike hits the three large boxes kept at the end over each other. After this you may cross the three big boxes present at last by playing tactfully smile emoticon .
+\newline
+\newline
+\end{frame}
+\begin{frame}{}
+\color{red}
+\textbf{Motivation} \newline
+\color{black} 
+The simulation is initialized by dropping of the ball from a height at the top left corner. The ball strikes the bike from its backside giving a momentum to the bike. The bike then falls on the see-saw thus making the box present on the left side of the see-saw to bounce off. Then the bike goes through the garbage boxes after passing through the pendulum in the path. Finally the bike hits the three large boxes kept at the end over each other.\newline
+\color{red}
+\textbf{Conclusion}  \newline
+\color{black} 
+This part of the project can be further used to make the complete game of dirtbike by changing the path as per the game. We can edit the features of tilting the bike leftwards or rightwards so that they may work better than present ones to get the feel of the real dirt-bike game.
+
+\end{frame}
+\end{document}
